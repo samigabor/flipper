@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/flipper-dapp-react-ts/static/css/main.02a0cd68.chunk.css",
-    "main.js": "/flipper-dapp-react-ts/static/js/main.9e86a825.chunk.js",
-    "main.js.map": "/flipper-dapp-react-ts/static/js/main.9e86a825.chunk.js.map",
-    "runtime-main.js": "/flipper-dapp-react-ts/static/js/runtime-main.1997e221.js",
-    "runtime-main.js.map": "/flipper-dapp-react-ts/static/js/runtime-main.1997e221.js.map",
-    "static/js/2.284bacec.chunk.js": "/flipper-dapp-react-ts/static/js/2.284bacec.chunk.js",
-    "static/js/2.284bacec.chunk.js.map": "/flipper-dapp-react-ts/static/js/2.284bacec.chunk.js.map",
-    "static/js/3.22cfc27a.chunk.js": "/flipper-dapp-react-ts/static/js/3.22cfc27a.chunk.js",
-    "static/js/3.22cfc27a.chunk.js.map": "/flipper-dapp-react-ts/static/js/3.22cfc27a.chunk.js.map",
-    "index.html": "/flipper-dapp-react-ts/index.html",
-    "static/css/main.02a0cd68.chunk.css.map": "/flipper-dapp-react-ts/static/css/main.02a0cd68.chunk.css.map",
-    "static/js/2.284bacec.chunk.js.LICENSE.txt": "/flipper-dapp-react-ts/static/js/2.284bacec.chunk.js.LICENSE.txt"
+    "main.css": "/flipper/static/css/main.02a0cd68.chunk.css",
+    "main.js": "/flipper/static/js/main.9e86a825.chunk.js",
+    "main.js.map": "/flipper/static/js/main.9e86a825.chunk.js.map",
+    "runtime-main.js": "/flipper/static/js/runtime-main.5a910296.js",
+    "runtime-main.js.map": "/flipper/static/js/runtime-main.5a910296.js.map",
+    "static/js/2.284bacec.chunk.js": "/flipper/static/js/2.284bacec.chunk.js",
+    "static/js/2.284bacec.chunk.js.map": "/flipper/static/js/2.284bacec.chunk.js.map",
+    "static/js/3.22cfc27a.chunk.js": "/flipper/static/js/3.22cfc27a.chunk.js",
+    "static/js/3.22cfc27a.chunk.js.map": "/flipper/static/js/3.22cfc27a.chunk.js.map",
+    "index.html": "/flipper/index.html",
+    "static/css/main.02a0cd68.chunk.css.map": "/flipper/static/css/main.02a0cd68.chunk.css.map",
+    "static/js/2.284bacec.chunk.js.LICENSE.txt": "/flipper/static/js/2.284bacec.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1997e221.js",
+    "static/js/runtime-main.5a910296.js",
     "static/js/2.284bacec.chunk.js",
     "static/css/main.02a0cd68.chunk.css",
     "static/js/main.9e86a825.chunk.js"
