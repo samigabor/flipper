@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@ethersproject/providers": "^5.0.19",
+    "@ethersproject/units": "^5.0.9",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",

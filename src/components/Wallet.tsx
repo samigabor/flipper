@@ -1,5 +1,6 @@
 import { useWeb3React } from '@web3-react/core';
 import { Web3Provider } from '@ethersproject/providers';
+import { formatEther } from '@ethersproject/units';
 import { InjectedConnector } from '@web3-react/injected-connector';
 import useSWR from 'swr';
 
@@ -34,7 +35,7 @@ export const Balance = () => {
   if(!balance) {
     return <div>NO balance found!</div>
   }
-  return <div>Balance: {balance.toString()}</div>;
+  return <div>Balance: {parseFloat(formatEther(balance)).toPrecision(6)}</div>;
 }
 
 
