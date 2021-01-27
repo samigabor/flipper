@@ -18,9 +18,9 @@ export const Balance = () => {
     fetcher: fetcher(library),
   })
   if(!balance) {
-    return <div>NO balance found!</div>
+    return <span>0</span>
   }
-  return <div>Balance: { parseFloat(formatEther(balance)).toPrecision(6) }</div>;
+  return <span>{ parseFloat(formatEther(balance)).toPrecision(6) }</span>;
 }
 
 
@@ -31,18 +31,50 @@ export const Wallet = () => {
     activate(injected);
   }
 
-  return (
-    <div>
-      <div>ChainId: {chainId}</div>
-      <div>Account: {account}</div>
-      {active ? (
-        <div>✅ </div>
-      ) : (
-        <button type="button" onClick={onClick}>
-          Connect
-        </button>
-      )}
-      {active && <Balance />}
+  return <>
+    { active ? (
+      <div className="nav-item dropdown">
+      <a
+        className="nav-link dropdown-toggle"
+        href="#home"
+        id="navbarDropdown"
+        role="button"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <span id="playerBalance"><Balance /></span> ETH (player)
+      </a>
+      <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div className="dropdown-item input-group">
+          <span id="playerAddress">{ account }</span>
+        </div>
+  
+        <div className="dropdown-item input-group">
+          <div className="input-group-prepend">
+            <button
+              className="btn btn-outline-danger"
+              type="button"
+              id="withdrawPlayerBalance"
+            >
+              Withdraw
+            </button>
+          </div>
+          <input
+            id="withdrawPlayerAmount"
+            type="text"
+            className="form-control"
+            placeholder="ETH amount"
+            aria-label="Withdraw player amount button"
+            aria-describedby="withdraw player amount"
+          />
+        </div>
+      </div>
     </div>
-  )
+    ) : (
+      <button className="nav-link btn btn-light btn-sm" type="button" onClick={onClick}>
+        Connect to MetaMask
+      </button>
+    )}
+  </>
 }

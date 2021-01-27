@@ -1,3 +1,5 @@
+import { Wallet } from './Wallet';
+
 const Header: React.FC = () => {
   return <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <a className="navbar-brand" href="#home">Flipper</a>
@@ -14,45 +16,8 @@ const Header: React.FC = () => {
     </button>
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav mr-auto">
-        <li className="nav-item dropdown">
-          <a
-            className="nav-link dropdown-toggle"
-            href="#home"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <span id="playerBalance">0 </span> ETH (player)
-          </a>
-          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div className="dropdown-item input-group">
-              <span id="playerAddress"></span>
-            </div>
-
-            <div className="dropdown-item input-group">
-              <div className="input-group-prepend">
-                <button
-                  className="btn btn-outline-danger"
-                  type="button"
-                  id="withdrawPlayerBalance"
-                >
-                  Withdraw
-                </button>
-              </div>
-              <input
-                id="withdrawPlayerAmount"
-                type="text"
-                className="form-control"
-                placeholder="ETH amount"
-                aria-label="Withdraw player amount button"
-                aria-describedby="withdraw player amount"
-              />
-            </div>
-          </div>
-        </li>
+      <div className="navbar-nav mr-auto">
+        <Wallet />
 
         <li className="nav-item dropdown">
           <a
@@ -112,7 +77,7 @@ const Header: React.FC = () => {
             </div>
           </div>
         </li>
-      </ul>
+      </div>
       <span className="navbar-text" id="ifOwner"></span>
     </div>
   </nav>

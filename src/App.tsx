@@ -4,7 +4,6 @@ import LoadingArea from './components/LoadingArea';
 import BettingArea from './components/BettingArea';
 import React from 'react';
 import { Web3ReactProvider } from '@web3-react/core';
-import { Wallet } from './components/Wallet';
 import { Web3Provider } from '@ethersproject/providers';
 
 const getLibrary = (provider: any): Web3Provider => {
@@ -19,7 +18,6 @@ function App() {
       <Header />
       <LoadingArea />
       <BettingArea />
-      <Wallet />
     </Web3ReactProvider>
   )
 }
