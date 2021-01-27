@@ -1,6 +1,7 @@
 import { useWeb3React } from '@web3-react/core';
 import { Web3Provider } from '@ethersproject/providers';
 import { InjectedConnector } from '@web3-react/injected-connector';
+import useSWR from 'swr';
 
 export const getWeb3ProviderLibrary = (provider: any): Web3Provider => {
   const library = new Web3Provider(provider);
@@ -17,6 +18,25 @@ const injectedConnector = new InjectedConnector({
     42, // Kovan
   ],
 })
+
+const fetcher = (library: any) => (...args: any[]) => {
+  const [method, ...params] = args;
+  console.log(method, params);
+  return library[method](...params);
+}
+
+
+export const Balance = () => {
+  const { account, library } = useWeb3React<Web3Provider>()
+  const { data: balance } = useSWR(['getBalance', account, 'latest'], {
+    fetcher: fetcher(library),
+  })
+  if(!balance) {
+    return <div>NO balance found!</div>
+  }
+  return <div>Balance: {balance.toString()}</div>;
+}
+
 
 export const Wallet = () => {
   const { chainId, account, activate, active } = useWeb3React<Web3Provider>();
@@ -36,6 +56,7 @@ export const Wallet = () => {
           Connect
         </button>
       )}
+      {active && <Balance />}
     </div>
   )
 }
