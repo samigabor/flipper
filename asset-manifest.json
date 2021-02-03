@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/flipper/static/css/main.ffecdfe8.chunk.css",
-    "main.js": "/flipper/static/js/main.e8b441a0.chunk.js",
-    "main.js.map": "/flipper/static/js/main.e8b441a0.chunk.js.map",
-    "runtime-main.js": "/flipper/static/js/runtime-main.1f75d8f3.js",
-    "runtime-main.js.map": "/flipper/static/js/runtime-main.1f75d8f3.js.map",
-    "static/js/2.3c5258a8.chunk.js": "/flipper/static/js/2.3c5258a8.chunk.js",
-    "static/js/2.3c5258a8.chunk.js.map": "/flipper/static/js/2.3c5258a8.chunk.js.map",
-    "static/js/3.dd199a72.chunk.js": "/flipper/static/js/3.dd199a72.chunk.js",
-    "static/js/3.dd199a72.chunk.js.map": "/flipper/static/js/3.dd199a72.chunk.js.map",
+    "main.js": "/flipper/static/js/main.8a776262.chunk.js",
+    "main.js.map": "/flipper/static/js/main.8a776262.chunk.js.map",
+    "runtime-main.js": "/flipper/static/js/runtime-main.511df2d5.js",
+    "runtime-main.js.map": "/flipper/static/js/runtime-main.511df2d5.js.map",
+    "static/js/2.a99b99ec.chunk.js": "/flipper/static/js/2.a99b99ec.chunk.js",
+    "static/js/2.a99b99ec.chunk.js.map": "/flipper/static/js/2.a99b99ec.chunk.js.map",
+    "static/js/3.1a710626.chunk.js": "/flipper/static/js/3.1a710626.chunk.js",
+    "static/js/3.1a710626.chunk.js.map": "/flipper/static/js/3.1a710626.chunk.js.map",
     "index.html": "/flipper/index.html",
     "static/css/main.ffecdfe8.chunk.css.map": "/flipper/static/css/main.ffecdfe8.chunk.css.map",
-    "static/js/2.3c5258a8.chunk.js.LICENSE.txt": "/flipper/static/js/2.3c5258a8.chunk.js.LICENSE.txt"
+    "static/js/2.a99b99ec.chunk.js.LICENSE.txt": "/flipper/static/js/2.a99b99ec.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1f75d8f3.js",
-    "static/js/2.3c5258a8.chunk.js",
+    "static/js/runtime-main.511df2d5.js",
+    "static/js/2.a99b99ec.chunk.js",
     "static/css/main.ffecdfe8.chunk.css",
-    "static/js/main.e8b441a0.chunk.js"
+    "static/js/main.8a776262.chunk.js"
   ]
 }
