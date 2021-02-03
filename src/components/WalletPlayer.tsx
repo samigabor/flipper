@@ -24,7 +24,7 @@ export const Balance = () => {
 }
 
 
-export const Wallet = () => {
+export const WalletPlayer = () => {
   const { chainId, account, activate, active } = useWeb3React<Web3Provider>();
 
   const onClick = () => {
